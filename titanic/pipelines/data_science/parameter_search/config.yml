@@ -1,0 +1,18 @@
+# @package _group_
+defaults:
+  - hydra/sweeper: nevergrad
+  - model: lightgbm.yml
+
+hydra:
+  sweeper:
+    optim:
+      optimizer: OnePlusOne
+      budget: 80
+      num_workers: 10
+      noisy: true
+      maximize: true
+      seed: 255
+  sweep:
+    dir: search_results
+    subdir: ${hydra.job.num}
+version: 1

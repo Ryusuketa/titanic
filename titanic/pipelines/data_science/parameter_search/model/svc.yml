@@ -1,0 +1,15 @@
+# @package _global_
+hydra:
+  sweeper:
+    parametrization:
+      C:
+        lower: 0.1
+        upper: 10.0
+        log: true
+      gamma:
+        lower: 0.0001
+        upper: 1
+        log: true
+
+C: 10.0
+gamma: 1.0

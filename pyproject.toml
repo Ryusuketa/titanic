@@ -1,0 +1,5 @@
+[tool.kedro]
+package_name = "titanic"
+project_name = "titanic"
+project_version = "0.17.0"
+source_dir = "."
